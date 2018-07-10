@@ -1,0 +1,2 @@
+/home   192.168.1.0/8(rw,sync,no_subtree_check,no_root_squash)
+/user://user 192.168.1.0/24(rw,sync,no_subtree_check,no_root_squash)

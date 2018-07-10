@@ -1,0 +1,44 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sdb3 during installation
+UUID=73127839-1c64-49f2-9ccc-5cafd3fc0895 /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sdb2 during installation
+UUID=9dc228be-e2ba-4377-b469-8abcf790c195 /boot           ext4    defaults        0       2
+# /home was on /dev/sdb5 during installation
+UUID=d007636f-cfec-4c4d-a585-e4887d12217c /home           ext4    defaults        0       2
+# swap was on /dev/sdb4 during installation
+UUID=2f203e6c-9a54-432d-863d-be226357def3 none            swap    sw              0       0
+titan:/storage  /titan-storage   nfs     defaults        0       2
+titan:/home/iic3373	/user/iic3373	nfs	defaults	0	2
+tripio:/home/turbotastic	/user/turbotastic	nfs	defaults	0	2
+trauco:/repo-local  /trauco-storage   nfs     defaults        0       2
+#pillan:/storage /pillan-storage nfs     defaults        0       2
+caleuche:/home/cpieringer       /user/cpieringer        nfs     defaults        0       2
+caleuche:/home/asoto    /user/asoto     nfs     defaults        0       2
+grimanas:/Fondef        /mnt/nas/Fondef nfs     defaults        0       2
+grimanas:/GrimaRepo     /mnt/nas/GrimaRepo      nfs     defaults        0       2
+#grimanas:/USBDisk4      /mnt/nas/repo2T nfs     defaults        0       2
+#grimanas:/USBDisk1      /mnt/nas/otherdisk      nfs     defaults        0       2
+grimanas:/Homes/analia  /user/analia    nfs     defaults        0       2
+grimanas:/Homes/bnwendt  /user/bnwendt    nfs     defaults        0       2
+grimanas:/Homes/carojas4        /user/carojas4  nfs     defaults        0       2
+grimanas:/Homes/terosset        /user/terosset  nfs     defaults        0       2
+grimanas2:/GrimaRepo    /mnt/nas2/GrimaRepo     nfs     defaults        0       2
+grimanas2:/Fondef    /mnt/nas2/Fondef     nfs     defaults        0       2
+grimanas2:/2T    /mnt/nas2/repo2T     nfs     defaults        0       2
+//grimanvr/record_export	/mnt/nvr/	cifs	username=admin,password=grima	0	2
+
+#iic2523-2017-2
+tripio:/home/ceyzaguirre4	/user/ceyzaguirre4	nfs	defaults	0	2
+
+titan:/home       /mnt-homes/titan     nfs     defaults        0       2
+caleuche:/home    /mnt-homes/caleuche  nfs     defaults        0       2
+trauco:/home      /mnt-homes/trauco    nfs     defaults        0       
+catalina:/home /mnt-homes/catalina nfs defaults 0 2
+willfren:/home /mnt-homes/willfren nfs defaults 0 2
+guillermo:/home /mnt-homes/guillermo nfs defaults 0 2
